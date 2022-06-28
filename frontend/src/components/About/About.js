@@ -1,3 +1,6 @@
+import gamedevlogo from "../../images/Group.svg";
+import uiuxlogo from "../../images/Vector.svg";
+import vfxlogo from "../../images/Vector (1).svg";
 import "./About.css";
 
 export default function () {
@@ -13,7 +16,7 @@ export default function () {
             <div className="about-text-wrapper">
               <h3>ABOUT US</h3>
               <p>
-                <span>CREATORS COMMUNE</span> was founded to serve as an
+                <span style={{textTransform:"capitalize"}}>CREATORS COMMUNE</span> was founded to serve as an
                 environment for people to learn about the process of developing
                 games, to play and understand game design, and to collaborate
                 with others in researching and creating their own games.
@@ -27,14 +30,19 @@ export default function () {
               <h3>WHAT DO WE DO ?</h3>
               <div className="what-we-do-content-wrapper">
                 <div className="what-we-do-content">
+                  <img src={gamedevlogo} alt="" srcset="" />
                   <h4>
                     GAME<br></br>DEVELOPMENT
                   </h4>
                 </div>
                 <div className="what-we-do-content">
+                  <img src={uiuxlogo} alt="" srcset="" />
+
                   <h4>UI UX DESIGN</h4>
                 </div>
                 <div className="what-we-do-content">
+                  <img src={vfxlogo} alt="" srcset="" />
+
                   <h4>
                     VISUAL EFFECTS<br></br>[VFX]
                   </h4>

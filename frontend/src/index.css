@@ -4,3 +4,8 @@
   box-sizing: border-box;
   font-family: "poppins",sans-serif;
 }
+body{
+  background:url(./images/bg.svg);
+  background-repeat: repeat-y;
+  background-size: cover;
+}

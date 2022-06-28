@@ -5,9 +5,10 @@
 }
 
 .section-title-wrapper{
-  width:80%;
+  width:60%;
 }
 .section-title-wrapper>h2{
+  color:white;
   font-size: 4em;
   font-weight: 900;
 }

@@ -1,0 +1,11 @@
+.header{
+  position: fixed;
+  padding: 20px;
+  height:150px;
+  width:100%;
+  /* background-color:rgba(0,0,0,0.5); */
+  display: flex;
+  box-shadow:inset 0px 0px 70px 20px black;
+  align-items: center;
+  justify-content:space-around;
+}
