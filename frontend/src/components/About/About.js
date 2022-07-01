@@ -3,9 +3,9 @@ import uiuxlogo from "../../images/Vector.svg";
 import vfxlogo from "../../images/Vector (1).svg";
 import "./About.css";
 
-export default function () {
+export default function About() {
   return (
-    <div className="about-wrapper">
+    <div className="about-wrapper" id="about">
       <div className="section-title-wrapper">
         <h2>WHO ARE WE ?</h2>
       </div>

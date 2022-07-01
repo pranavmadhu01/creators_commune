@@ -3,6 +3,8 @@
   padding:0;
   box-sizing: border-box;
   font-family: "poppins",sans-serif;
+  /* background-color: rgba(255,200,300,0.4); */
+  scroll-behavior: smooth;
 }
 body{
   background:url(./images/bg.svg);

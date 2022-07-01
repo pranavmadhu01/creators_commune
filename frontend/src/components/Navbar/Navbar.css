@@ -4,28 +4,59 @@
   height: 70px;
   width: 100%;
   display: flex;
-  background: black;
   align-items: center;
   justify-content: space-between;
   padding: 0px 50px 0px 50px;
-  z-index:9999;
+  z-index: 9999;
 }
-
-.navbar {
-  width: fit-content;
+.hamburger-icon {
+  position: absolute;
+  font-size: 2.5rem;
+  right: 2%;
+  color: #f408a5;
 }
-
 .navbar-links-list-wrapper {
+  height:100%;
   list-style: none;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: 40px;
 }
-
 .logo-wrapper {
 }
 
+
+.logo-wrapper > img {
+  width: 200px;
+}
+
+.navbar{
+  position:absolute;
+  top:0;
+  right:-100%;
+  width:300px;
+  background:rgba(100, 80, 211,0.5); 
+  z-index:-1;
+  height:100vh;
+  border-radius: 100% 0px 0px 100%;
+  transition: all 200ms ease 0s;
+  
+}
+.navbar-active{
+  right:0;
+  transition: all 200ms ease 0s;
+
+}
+
+
+.links-list{
+  width:70%;
+  text-align: left;
+}
 .navbar-links {
   color: white;
   text-decoration: none;
-  font-size: 1.1em;
+  font-size: 1.5em;
 }

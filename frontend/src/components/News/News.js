@@ -3,7 +3,7 @@ import { newsdata } from "./Newsdata";
 import newsnowimg from "../../images/news-happening-now.svg";
 export default function News() {
   return (
-    <div className="news-wrapper">
+    <div className="news-wrapper" id="events">
       <div className="section-title-wrapper">
         <h2>HAPPENING</h2>
       </div>

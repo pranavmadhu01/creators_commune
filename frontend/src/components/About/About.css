@@ -75,16 +75,23 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  width: 100%;
+  width: fit-content;
   height: fit-content;
-  align-items: center;
-  justify-content: center;
 }
 .what-we-do-content {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap:20px;
+  gap:30px;
+}
+.what-we-do-content>img{
+  width:50px;
+}
+.what-we-do-content>h4{
+  transition: all 200ms ease 0s;
+  cursor: pointer;
+}
+.what-we-do-content:hover h4{
+  color:#6450d3
 }
 .bottom-right-image-wrapper {
   grid-column: 8/-1;

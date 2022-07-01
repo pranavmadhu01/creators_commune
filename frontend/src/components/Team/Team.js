@@ -3,7 +3,7 @@ import { teamdata } from "./teamdata";
 
 export default function Team() {
   return (
-    <div className="team-wrapper">
+    <div className="team-wrapper" id="team">
       <div className="section-title-wrapper">
         <h2>MEET OUR TEAM</h2>
       </div>
