@@ -10,7 +10,7 @@ export default function Team() {
       <div className="team-cards-wrapper">
         {teamdata.map((team) => (
           <div className="team-card">
-            <img src={team.img} />
+            <img src={team.img} className="team-card-image"/>
             <div className="team-card-details-wrapper">
               <h3>{team.name}</h3>
               <span>{team.desig}</span>

@@ -1,7 +1,7 @@
 export const teamdata = [
   {
-    img: require(`../../images/Group.svg`),
-    name: `Jasmin Jolly`,
+    img: require(`../../images/hello.webp`),
+    name: `Jasmine Jolly`,
     desig: `Faculty in charge`,
     social: {
       linkedin: ``,
@@ -11,9 +11,9 @@ export const teamdata = [
     },
   },
   {
-    img: require(`../../images/Group.svg`),
+    img: require(`../../images/hello.webp`),
     name: `Amal C P`, 
-    desig: `Faculty in charge`,
+    desig: `Head`,
     social: {
       linkedin: ``,
       instagram: ``,
@@ -22,7 +22,7 @@ export const teamdata = [
     },
   },
   {
-    img: require(`../../images/Group.svg`),
+    img: require(`../../images/hello.webp`),
     name: `Pranav Madhu`,
     desig: `Faculty in charge`,
     social: {

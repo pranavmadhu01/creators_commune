@@ -9,11 +9,11 @@ export default function () {
       </div>
       <nav className="navbar">
         <ul className="navbar-links-list-wrapper">
-          <li className="links-list"><a href="" className="navbar-links">ABOUT US</a></li>
-          <li className="links-list"><a href="" className="navbar-links">EVENTS</a></li>
-          <li className="links-list"><a href="" className="navbar-links">UPDATES</a></li>
-          <li className="links-list"><a href="" className="navbar-links">OUR TEAM</a></li>
-          <li className="links-list"><a href="" className="navbar-links">CONTACT</a></li>
+          <li className="links-list"><a href="" className="navbar-links">About us</a></li>
+          <li className="links-list"><a href="" className="navbar-links">Events</a></li>
+          <li className="links-list"><a href="" className="navbar-links">Updates</a></li>
+          <li className="links-list"><a href="" className="navbar-links">Our team</a></li>
+          <li className="links-list"><a href="" className="navbar-links">Contact</a></li>
         </ul>
       </nav>
     </header>
