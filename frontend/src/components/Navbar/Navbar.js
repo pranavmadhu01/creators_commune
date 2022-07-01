@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import "./Navbar.css";
 
 import logo from "../../images/Logo.svg";
-import navbarLogo from "../../images/Logo.svg";
 import { FaHamburger } from "react-icons/fa";
 
 export default function () {
