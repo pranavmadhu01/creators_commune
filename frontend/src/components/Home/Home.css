@@ -1,18 +1,12 @@
 .home-wrapper{
-  width:100vw;
-  min-height:100vh;
   background: url(../../images/home-background.svg)no-repeat;
-  background-color:rgba(100, 80, 211,0.5);
   background-color: rgba(0,0,0,0.5);
   background-blend-mode: color;
   background-attachment:fixed;
-
   background-size: cover;
-  display: flex;
-  align-items: center;
-  padding:100px;
 }
 .welcome-text{
+  align-self: flex-start;
   color:white;
   font-size: 7.5em;
   font-weight: 500;

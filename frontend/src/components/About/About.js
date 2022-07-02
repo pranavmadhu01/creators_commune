@@ -5,7 +5,7 @@ import "./About.css";
 
 export default function About() {
   return (
-    <div className="about-wrapper" id="about">
+    <div className="all-sections about-wrapper" id="about">
       <div className="section-title-wrapper">
         <h2>WHO ARE WE ?</h2>
       </div>

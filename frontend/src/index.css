@@ -6,14 +6,10 @@
   /* background-color: rgba(255,200,300,0.4); */
   scroll-behavior: smooth;
 }
-html{
-  width:100%;
-}
 body{
   background:url(./images/bg.svg);
   background-repeat: repeat-y;
   background-size: cover;
-  width:100%;
 }
 ::-webkit-scrollbar{
   display:none;
