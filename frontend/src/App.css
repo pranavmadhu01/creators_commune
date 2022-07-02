@@ -26,3 +26,8 @@
   flex-direction: column;
   gap:100px;
 }
+@media all and (max-width:1000px){
+  .all-sections{
+    gap:50px;
+  }
+}

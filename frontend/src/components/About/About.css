@@ -10,7 +10,7 @@
   width: 100%;
 }
 .about-grid-top {
-  min-height:390px;
+  min-height: 390px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
@@ -23,10 +23,10 @@
   gap: 20px;
   color: white;
 }
-.about-text-wrapper>h3{
-  font-size:2rem;
+.about-text-wrapper > h3 {
+  font-size: 2rem;
 }
-.about-text-wrapper>p{
+.about-text-wrapper > p {
   font-size: 1.3rem;
   line-height: 30px;
   font-weight: 900;
@@ -39,7 +39,7 @@
 .about-grid-bottom {
   display: grid;
   grid-template-columns: repeat(9, 1fr);
-  min-height:390px;
+  min-height: fit-content;
 }
 .bottom-image-wrapper {
   background-repeat: no-repeat;
@@ -53,13 +53,13 @@
   grid-column: 3/8;
   width: 100%;
   height: 100%;
-  background:white;
+  background: white;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
 }
-.what-we-do-wrapper>h3{
+.what-we-do-wrapper > h3 {
   font-size: 2rem;
   font-weight: 900;
 }
@@ -73,19 +73,50 @@
 .what-we-do-content {
   display: flex;
   align-items: center;
-  gap:30px;
+  gap: 30px;
 }
-.what-we-do-content>img{
-  width:50px;
+.what-we-do-content > img {
+  width: 50px;
 }
-.what-we-do-content>h4{
+.what-we-do-content > h4 {
   transition: all 200ms ease 0s;
   cursor: pointer;
 }
-.what-we-do-content:hover h4{
-  color:#6450d3
+.what-we-do-content:hover h4 {
+  color: #6450d3;
 }
 .bottom-right-image-wrapper {
   grid-column: 8/-1;
   background-image: url(../../images/about-bottom-image-right.svg);
+}
+@media all and (max-width: 1000px) {
+  .about-grid-wrapper{
+    min-height: fit-content;
+    
+  }
+  .about-grid-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-title-image-container {
+    width: 100%;
+    min-height: 250px;
+  }
+  .about-grid-bottom {
+    display: flex;
+    flex-direction: column;
+  }
+  .bottom-left-image-wrapper{
+    display: none;
+  }
+  .bottom-right-image-wrapper{
+    display: none;
+  }
+  .what-we-do-wrapper{
+    padding:30px
+  }
+  .what-we-do-content-wrapper {
+    padding: 20px;
+  }
 }

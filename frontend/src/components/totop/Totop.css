@@ -1,0 +1,21 @@
+.totop-wrapper{
+  position: fixed;
+  z-index: 9999;
+  bottom:2%;
+  right: 2%;
+  background: #f408a5;
+  padding:10px;
+  border-radius: 10px;
+}
+.totop-icon{
+  color:white;
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+@media  all and (max-width:1000px)
+{
+  .totop-wrapper{
+    padding:5px;
+  }
+}
