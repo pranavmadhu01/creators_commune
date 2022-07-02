@@ -90,9 +90,8 @@
   background-image: url(../../images/about-bottom-image-right.svg);
 }
 @media all and (max-width: 1000px) {
-  .about-grid-wrapper{
+  .about-grid-wrapper {
     min-height: fit-content;
-    
   }
   .about-grid-top {
     display: flex;
@@ -107,21 +106,21 @@
     display: flex;
     flex-direction: column;
   }
-  .bottom-left-image-wrapper{
+  .bottom-left-image-wrapper {
     display: none;
   }
-  .bottom-right-image-wrapper{
+  .bottom-right-image-wrapper {
     display: none;
   }
-  .what-we-do-wrapper{
-    padding:30px
+  .what-we-do-wrapper {
+    padding: 30px;
   }
   .what-we-do-content-wrapper {
     padding: 20px;
   }
 }
-@media all and (max-width:500px){
-  .about-text-wrapper{
-    padding:15px;
+@media all and (max-width: 500px) {
+  .about-text-wrapper {
+    padding: 15px;
   }
 }

@@ -35,6 +35,9 @@
   }
 }
 @media all and (max-width:500px){
+  .App{
+    gap:0px;
+  }
   .all-sections{
     padding:100px 5px 5px 5px;
   }

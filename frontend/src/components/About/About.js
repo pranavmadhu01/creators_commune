@@ -9,7 +9,6 @@ export default function About() {
       <div className="section-title-wrapper">
         <h2>WHO ARE WE ?</h2>
       </div>
-      -
       <div className="about-content-wrapper">
         <div className="about-grid-wrapper">
           <div className="about-grid-top">
