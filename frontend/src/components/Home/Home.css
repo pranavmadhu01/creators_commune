@@ -1,6 +1,6 @@
 .home-wrapper{
-  width:100%;
-  height:100vh;
+  width:100vw;
+  min-height:100vh;
   background: url(../../images/home-background.svg)no-repeat;
   background-color:rgba(100, 80, 211,0.5);
   background-color: rgba(0,0,0,0.5);
@@ -14,10 +14,18 @@
 }
 .welcome-text{
   color:white;
-  font-size: 8em;
+  font-size: 7.5em;
   font-weight: 500;
 }
 .welcome-text-bolder{
   font-size: 1.3em;
   font-weight: 900;
+}
+@media(hover:none){
+  .home-wrapper{
+    min-height:100vh;
+  }
+  .welcome-text{
+    font-size: 3em;
+  }
 }

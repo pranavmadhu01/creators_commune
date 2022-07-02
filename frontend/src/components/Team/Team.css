@@ -3,9 +3,8 @@
   align-items: center;
   flex-direction: column;
   width:100%;
-  height:fit-content;
+  min-height:100vh;
   gap:100px;
-  padding:100px;
 }
 .team-cards-wrapper{
   width:1100px;
@@ -22,6 +21,7 @@
   border-radius: 20px;
   padding:10px;
   background-color: white;
+  background: #6450d3;
   color:black;
   transition: all 200ms ease 0s;
 }

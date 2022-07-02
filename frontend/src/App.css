@@ -1,15 +1,18 @@
 .App{
-  width:100%;
+  width:100vw;
+  height: fit-content;
   display:flex;
   flex-direction: column;
   gap:100px;
+  overflow:hidden;
 }
 
 .section-title-wrapper{
-  width:60%;
+  text-align: left;
+  width:100%;
 }
 .section-title-wrapper>h2{
   color:white;
-  font-size: 4em;
+  font-size: 3.5em;
   font-weight: 900;
 }
