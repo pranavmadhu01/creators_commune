@@ -30,4 +30,12 @@
   .all-sections{
     gap:50px;
   }
+  .section-title-wrapper>h2{
+    font-size: 2em;
+  }
+}
+@media all and (max-width:500px){
+  .all-sections{
+    padding:100px 5px 5px 5px;
+  }
 }

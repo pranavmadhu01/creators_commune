@@ -120,3 +120,8 @@
     padding: 20px;
   }
 }
+@media all and (max-width:500px){
+  .about-text-wrapper{
+    padding:15px;
+  }
+}
