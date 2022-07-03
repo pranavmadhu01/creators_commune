@@ -1,6 +1,6 @@
 .App{
   width:100vw;
-  height: fit-content;
+  height: min-content;
   display:flex;
   flex-direction: column;
   gap:100px;
