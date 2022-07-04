@@ -30,37 +30,37 @@ function App() {
             enable: true,
             mode: "repulse",
           },
-          onHover: {
-            // enable: true,
-            mode: "repulse",
-          },
         },
         modes: {
-          push: {
-            quantity: 10,
-          },
           repulse: {
-            distance: 200,
+            distance: 400,
           },
         },
       },
       particles: {
         shape: {
-          type: "square",
+          type: "circle",
         },
         links: {
           enable: true,
-          distance: 50,
+          distance: 80,
+          color:{
+            value:"#00B7D9"
+          },
         },
         move: {
           enable: true,
-          speed: { min: 1, max: 2 },
+          speed: { min: 0.0, max: 0.3 },
         },
         opacity: {
-          value: { min: 0.3, max: 0.5 },
+          value: { min: 0.01, max: 0.5 },
         },
         size: {
-          value: { min: 1, max: 3 },
+          value: { min: 1, max: 6 },
+        },
+        color: {
+          value: "#f408a5",
+          // value:"#000" 
         },
       },
     };

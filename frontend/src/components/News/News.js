@@ -1,7 +1,23 @@
 import "./News.css";
+import React, { useState, useEffect } from "react";
 import { newsdata } from "./Newsdata";
 import newsnowimg from "../../images/news-happening-now.svg";
 export default function News() {
+  const [events, setEvents] = useState([]);
+  const fetchData = () => {
+    fetch("")
+      .then((response) => {
+        return response.json();
+      })
+      .then((data) => {
+        setEvents(data);
+      });
+  };
+
+  useEffect(()=>{
+    fetchData();
+  },[])
+
   return (
     <div className="all-sections news-wrapper" id="events">
       <div className="section-title-wrapper">
@@ -24,7 +40,9 @@ export default function News() {
                 <h4>{news.eventname}</h4>
                 <p>{news.desc}</p>
               </div>
-              <a href="#" className="news-register-link">REGISTER</a>
+              <a href="#" className="news-register-link">
+                REGISTER
+              </a>
             </div>
           ))}
         </div>

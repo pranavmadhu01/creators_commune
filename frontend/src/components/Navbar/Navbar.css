@@ -37,6 +37,8 @@
   right:-100%;
   width:300px;
   background:rgba(100, 80, 211,1); 
+  background: #00B7D9;
+  background:linear-gradient(45deg,rgba(100,80,211,1),#00B7D9);
   z-index:-1;
   height:100vh;
   border-radius: 100% 0px 0px 100%;
@@ -58,10 +60,17 @@
   color: white;
   text-decoration: none;
   font-size: 1.5em;
+  text-transform: uppercase;
 }
 @media all and (max-width:1000px)
 {
   .header{
     padding:10px;
+  }
+}
+@media all and (max-width:500px)
+{
+  .navbar{
+    width:60%;
   }
 }
