@@ -50,7 +50,7 @@ function App() {
         },
         move: {
           enable: true,
-          speed: { min: 0.0, max: 0.3 },
+          speed: { min: 0.0, max: 0.5 },
         },
         opacity: {
           value: { min: 0.01, max: 0.5 },
