@@ -1,30 +1,16 @@
-import "./App.css";
-import React, { useMemo, useCallback, useEffect, useState } from "react";
-
-import Particles from "react-tsparticles";
+import "./Loading.css";
+import React, { useMemo, useCallback } from "react";
 import { loadSlim } from "tsparticles-slim";
-
-import Home from "./components/Home/Home";
-import About from "./components/About/About";
-import Navbar from "./components/Navbar/Navbar";
-import News from "./components/News/News";
-import Team from "./components/Team/Team";
-import Footer from "./components/Footer/Footer";
-import Totop from "./components/totop/Totop";
-import Loading from "./Loading";
-
-function App() {
-  const [loading, setLoading] = useState(true)
-
-  useEffect(() => {
-    setTimeout(() => setLoading(false), 4000)
-  }, [])
+import Particles from "react-tsparticles"
+import ReactLoading from "react-loading";
+import Logo from "./images/Logo.svg";
+export default function Loading() {
   const options = useMemo(() => {
     return {
       background: {
-        color: "",
+        color: "#000",
       },
-      fpsLimit: 120,
+      fpsLimit: 900,
       responsive: [],
       fullScreen: {
         enable: true,
@@ -50,13 +36,13 @@ function App() {
         links: {
           enable: true,
           distance: 80,
-          color:{
-            value:"#00B7D9"
+          color: {
+            value: "#00B7D9",
           },
         },
         move: {
           enable: true,
-          speed: { min: 0.0, max: 0.5 },
+          speed: { min: 0.5, max: 1 },
         },
         opacity: {
           value: { min: 0.01, max: 0.5 },
@@ -66,7 +52,7 @@ function App() {
         },
         color: {
           value: "#f408a5",
-          // value:"#000" 
+          // value:"#000"
         },
       },
     };
@@ -76,24 +62,12 @@ function App() {
     loadSlim(engine);
   }, []);
   return (
-    <>
-    {loading === true ?(
-      <div className="App">
-      <Navbar />
-      <Totop />
-      <Home />
-      <About />
-      <News />
-      <Team />
-      <Footer />
+    <div className="loading-wrapper">
+      <img src={Logo} alt=""  className="loading-logo"/>
       <Particles init={particlesInit} options={options} />    
+
+      <ReactLoading type="bubbles" color="#f408a5" />
+
     </div>
-    ):(
-      <Loading />
-    )}
-    
-    </>
   );
 }
-
-export default App;
