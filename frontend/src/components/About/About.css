@@ -6,8 +6,9 @@
 .about-grid-wrapper {
   display: flex;
   flex-direction: column;
-  min-height: 780px;
+  height: fit-content;
   width: 100%;
+  background-color: #6450d3;
 }
 .about-grid-top {
   min-height: 390px;
@@ -39,7 +40,7 @@
 .about-grid-bottom {
   display: grid;
   grid-template-columns: repeat(9, 1fr);
-  min-height: fit-content;
+  min-height: 390px;
 }
 .bottom-image-wrapper {
   background-repeat: no-repeat;
@@ -114,6 +115,7 @@
   }
   .what-we-do-wrapper {
     padding: 30px;
+    min-height: 390px;
   }
   .what-we-do-content-wrapper {
     padding: 20px;

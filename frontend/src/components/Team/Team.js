@@ -6,11 +6,12 @@ export default function Team() {
   const [members, setMembers] = useState([]);
 
   const fetchData = () => {
-    fetch("")
+    fetch("http://192.168.60.150:8000/api/members/")
       .then((response) => {
         return response.json();
       })
       .then((data) => {
+        console.log(data);
         setMembers(data);
       });
   };
@@ -18,18 +19,20 @@ export default function Team() {
     fetchData();
   }, []);
 
+  console.log(members);
+
   return (
     <div className="all-sections team-wrapper" id="team">
       <div className="section-title-wrapper">
         <h2>MEET OUR TEAM</h2>
       </div>
       <div className="team-cards-wrapper">
-        {teamdata.map((team) => (
+        {members.map((member) => (
           <div className="team-card">
-            <img src={team.img} className="team-card-image" />
+            <img src={member.photo} className="team-card-image" />
             <div className="team-card-details-wrapper">
-              <h3>{team.name}</h3>
-              <span>{team.desig}</span>
+              <h3>{member.name}</h3>
+              <span>{member.designation}</span>
             </div>
           </div>
         ))}

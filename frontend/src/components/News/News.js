@@ -5,7 +5,7 @@ import newsnowimg from "../../images/news-happening-now.svg";
 export default function News() {
   const [events, setEvents] = useState([]);
   const fetchData = () => {
-    fetch("")
+    fetch("http://192.168.60.150:8000/api/events/")
       .then((response) => {
         return response.json();
       })
@@ -30,15 +30,17 @@ export default function News() {
         </div>
         <div className="news-upcoming-wrapper">
           <h3>Upcoming Events</h3>
-          {newsdata.map((news) => (
+          {events.map((event) => (
             <div className="news-card-wrapper">
               <div className="date-wrapper">
-                <span style={{ fontSize: "0.7rem" }}>{news.month}</span>
-                <span style={{ fontSize: "2rem" }}>{news.day}</span>
+                <span style={{ fontSize: "0.7rem" }}>{event.date}</span>
+                <span style={{ fontSize: "2rem" }}>{event.day}</span>
               </div>
               <div className="news-description-wrapper">
-                <h4>{news.eventname}</h4>
-                <p>{news.desc}</p>
+                <h4>{event.name}</h4>
+                <p>{event.description}</p>
+                <p>{event.time}</p>
+                {/* <img src={event.photo}></img> */}
               </div>
               <a href="#" className="news-register-link">
                 REGISTER
