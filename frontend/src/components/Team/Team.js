@@ -1,5 +1,4 @@
 import "./Team.css";
-import { teamdata } from "./teamdata";
 import React, { useEffect, useState } from "react";
 
 export default function Team() {

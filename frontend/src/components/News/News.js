@@ -1,6 +1,5 @@
 import "./News.css";
 import React, { useState, useEffect } from "react";
-import { newsdata } from "./Newsdata";
 import newsnowimg from "../../images/news-happening-now.svg";
 export default function News() {
   const [events, setEvents] = useState([]);
