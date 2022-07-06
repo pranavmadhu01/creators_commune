@@ -56,7 +56,7 @@ function App() {
         },
         move: {
           enable: true,
-          speed: { min: 0.0, max: 0.5 },
+          speed: { min: 0.0, max: 0.4 },
         },
         opacity: {
           value: { min: 0.01, max: 0.5 },
@@ -77,7 +77,7 @@ function App() {
   }, []);
   return (
     <>
-    {loading === true ?(
+    {loading === false ?(
       <div className="App">
       <Navbar />
       <Totop />

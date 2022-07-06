@@ -27,7 +27,15 @@
   color: white;
   font-size: 1.7rem;
 }
-.news-card-wrapper {
+.news-card-wrapper{
+  display: grid;
+  grid-auto-flow: row;
+  gap:20px;
+  max-height: 400px;
+  overflow-y: scroll;
+  padding:5px;
+}
+.news-card {
   position: relative;
   min-width: 350px;
   height: 110px;

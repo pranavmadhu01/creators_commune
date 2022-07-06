@@ -5,20 +5,17 @@ export default function Team() {
   const [members, setMembers] = useState([]);
 
   const fetchData = () => {
-    fetch("http://192.168.60.150:8000/api/members/")
+    fetch("http://127.0.0.1:8000/api/members/")
       .then((response) => {
         return response.json();
       })
       .then((data) => {
-        console.log(data);
         setMembers(data);
       });
   };
   useEffect(() => {
     fetchData();
   }, []);
-
-  console.log(members);
 
   return (
     <div className="all-sections team-wrapper" id="team">
