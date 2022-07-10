@@ -5,7 +5,6 @@ export default function Team() {
   const [members, setMembers] = useState([]);
 
   const fetchData = () => {
-    console.log(process.env.REACT_APP_FIREBASE_DOMAIN)
     fetch(
       `${process.env.REACT_APP_FIREBASE_DOMAIN}/Members.json`
     )
@@ -14,7 +13,6 @@ export default function Team() {
       })
       .then((data) => {
         setMembers(data);
-        console.log(data);
       });
   };
   useEffect(() => {
@@ -29,7 +27,7 @@ export default function Team() {
       <div className="team-cards-wrapper">
         {members.map((member) => (
           <div className="team-card">
-            <img src={member.photo} className="team-card-image" />
+            <img src={member.photo} className="team-card-image"  loading="lazy"/>
             <div className="team-card-details-wrapper">
               <h3>{member.name}</h3>
               <span>{member.designation}</span>

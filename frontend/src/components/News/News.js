@@ -11,7 +11,7 @@ export default function News() {
       })
       .then((data) => {
         setEvents(data);
-        setImage(data[data.length-1].photo);
+        setImage(data[data.length - 1].photo);
       });
   }
 
@@ -27,30 +27,36 @@ export default function News() {
       <div className="news-inner-wrapper">
         <div className="news-happening-now-wrapper">
           <h3>Live Now</h3>
-          <img src={image} alt="events image" />
+          <img src={image} alt="events image"  loading="lazy"/>
         </div>
         <div className="news-upcoming-wrapper">
           <h3>Events</h3>
           <div className="news-card-wrapper">
             {events
               .map((event) => (
-                <div className="news-card" id={event.date} key={event.date}>
+                <div
+                  className="news-card"
+                  id={event.date}
+                  key={event.date + event.day}
+                >
                   <div className="date-wrapper">
-                    <span style={{ fontSize: "0.7rem" }}>{event.date}</span>
-                    <span style={{ fontSize: "2rem" }}>{event.day}</span>
+                    <span style={{ fontSize: "1.9rem" }}>{event.date}</span>
+                    <span style={{ fontSize: "1.1rem" }}>{event.day}</span>
                   </div>
                   <div className="news-description-wrapper">
                     <h4>{event.name}</h4>
                     <p>{event.description}</p>
                     <p>{event.time}</p>
                   </div>
-                  <a
-                    href={event.link}
-                    className="news-register-link"
-                    target="_blank_"
-                  >
-                    REGISTER
-                  </a>
+                  {event.photo === image && (
+                    <a
+                      href={event.link}
+                      className="news-register-link"
+                      target="_blank_"
+                    >
+                      REGISTER
+                    </a>
+                  )}
                 </div>
               ))
               .reverse()}

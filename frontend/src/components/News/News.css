@@ -15,8 +15,11 @@
   font-size: 2rem;
 }
 .news-happening-now-wrapper > img {
-  max-width:400px;
+  max-width: 400px;
   border-radius: 10px;
+  box-shadow: rgba(240, 46, 170, 0.4) 10px 10px,
+    rgba(240, 46, 170, 0.3) 15px 15px, rgba(240, 46, 170, 0.2) 20px 20px,
+    rgba(240, 46, 170, 0.1) 25px 25px, rgba(240, 46, 170, 0.05) 30px 30px;
 }
 .news-upcoming-wrapper {
   display: flex;
@@ -27,13 +30,13 @@
   color: white;
   font-size: 1.7rem;
 }
-.news-card-wrapper{
+.news-card-wrapper {
   display: grid;
   grid-auto-flow: row;
-  gap:20px;
+  gap: 20px;
   max-height: 400px;
   overflow-y: scroll;
-  padding:5px;
+  padding: 5px;
 }
 .news-card {
   position: relative;
@@ -44,6 +47,9 @@
   gap: 00px;
   border-radius: 10px;
   overflow: hidden;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; 
 }
 .date-wrapper {
   width: 25%;
@@ -55,7 +61,6 @@
   gap: 3px;
   color: white;
   font-weight: 900;
-  font-size: 1.4rem;
   background: #f408a5;
 }
 .news-description-wrapper {

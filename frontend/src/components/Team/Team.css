@@ -13,10 +13,11 @@
   justify-content: space-between;
   border-radius: 20px;
   padding: 10px;
-  /* background: rgba(0, 183, 217,0.5); */
-  /* background:linear-gradient(45deg, rgba(0, 183, 217,0.5), #f408a5); */
   color: black;
   transition: all 200ms ease 0s;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 .team-card:hover {
   transform: scale(1.1);
@@ -24,13 +25,15 @@
 .team-card-image {
   width: 100%;
   min-height: 80%;
-  max-height: 80%;
+  max-height: 300px;
   object-fit: cover;
   border-radius: 10px;
 }
-.team-card-details-wrapper{
-  color:white;
-  
+.team-card-details-wrapper {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap:10px;
 }
 @media all and (max-width: 1000px) {
   .team-cards-wrapper {
@@ -54,14 +57,14 @@
   }
 }
 @media all and (max-width: 500px) {
-  .team-cards-wrapper{
-    gap:10px
+  .team-cards-wrapper {
+    gap: 10px;
   }
-  .team-card{
-    padding:1px;
+  .team-card {
+    padding: 1px;
     border-radius: 10px;
   }
-  .team-card-details-wrapper{
-    gap:5px;
+  .team-card-details-wrapper {
+    gap: 5px;
   }
 }
