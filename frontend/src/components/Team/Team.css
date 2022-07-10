@@ -67,4 +67,7 @@
   .team-card-details-wrapper {
     gap: 5px;
   }
+  .team-card-image{
+    height:200px;
+  }
 }

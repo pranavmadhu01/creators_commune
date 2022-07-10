@@ -53,7 +53,7 @@ function App() {
           },
         },
         move: {
-          enable: false,
+          enable: true,
           speed: { min: 0.1, max: 0.5 },
         },
         opacity: {

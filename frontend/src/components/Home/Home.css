@@ -20,4 +20,7 @@
   .welcome-text{
     font-size: 4rem;
   }
+  .home-wrapper{
+    background-attachment: scroll;
+  }
 }
