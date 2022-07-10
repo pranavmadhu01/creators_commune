@@ -5,7 +5,7 @@ export default function Team() {
   const [members, setMembers] = useState([]);
 
   const fetchData = () => {
-    fetch("http://127.0.0.1:8000/api/members/")
+    fetch("https://creators-commune.herokuapp.com/api/members/")
       .then((response) => {
         return response.json();
       })

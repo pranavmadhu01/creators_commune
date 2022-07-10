@@ -3,25 +3,21 @@ import React, { useState, useEffect } from "react";
 import newsnowimg from "../../images/news-happening-now.svg";
 export default function News() {
   const [events, setEvents] = useState([]);
-  const [click, setClicked] = useState();
-  const fetchData = () => {
-    fetch("http://127.0.0.1:8000/api/events/")
+  const [image, setImage] = useState({ newsnowimg });
+  async function fetchData() {
+    await fetch("https://creators-commune.herokuapp.com/api/events/")
       .then((response) => {
         return response.json();
       })
       .then((data) => {
         setEvents(data);
+        setImage(data[data.length-1].photo);
       });
-  };
+  }
 
   useEffect(() => {
     fetchData();
   }, []);
-  const length = events.length - 1;
-const newscardclicked =(e)=>{
-  console.log(e.currentTarget.id)
-}
-
 
   return (
     <div className="all-sections news-wrapper" id="events">
@@ -31,15 +27,14 @@ const newscardclicked =(e)=>{
       <div className="news-inner-wrapper">
         <div className="news-happening-now-wrapper">
           <h3>Live Now</h3>
-          {/* <img src={events[length]} alt="" /> */}
-          <img src={newsnowimg} alt="" />
+          <img src={image} alt="events image" />
         </div>
         <div className="news-upcoming-wrapper">
-          <h3>Upcoming Events</h3>
+          <h3>Events</h3>
           <div className="news-card-wrapper">
             {events
               .map((event) => (
-                <div className="news-card" id={event.date} onClick={newscardclicked}>
+                <div className="news-card" id={event.date} key={event.date}>
                   <div className="date-wrapper">
                     <span style={{ fontSize: "0.7rem" }}>{event.date}</span>
                     <span style={{ fontSize: "2rem" }}>{event.day}</span>

@@ -8,6 +8,8 @@
 }
 body{
   background:url(./images/bg.svg);
+  background-color: rgba(0,0,0,0.2);
+  background-blend-mode: color;
   background-repeat: repeat-y;
   background-size: cover;
 }

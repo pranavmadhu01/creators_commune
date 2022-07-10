@@ -24,8 +24,6 @@ function App() {
       background: {
         color: "",
       },
-      fpsLimit: 120,
-      responsive: [],
       fullScreen: {
         enable: true,
         zIndex: -1,
@@ -39,7 +37,7 @@ function App() {
         },
         modes: {
           repulse: {
-            distance: 400,
+            distance: 300,
           },
         },
       },
@@ -49,24 +47,23 @@ function App() {
         },
         links: {
           enable: true,
-          distance: 80,
+          distance: 60,
           color:{
-            value:"#00B7D9"
+            value:"#00B7D9",
           },
         },
         move: {
-          enable: true,
-          speed: { min: 0.0, max: 0.4 },
+          enable: false,
+          speed: { min: 0.1, max: 0.5 },
         },
         opacity: {
           value: { min: 0.01, max: 0.5 },
         },
         size: {
-          value: { min: 1, max: 6 },
+          value: { min: 1, max: 3 },
         },
         color: {
           value: "#f408a5",
-          // value:"#000" 
         },
       },
     };

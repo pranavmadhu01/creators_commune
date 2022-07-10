@@ -10,7 +10,6 @@ export default function Loading() {
       background: {
         color: "#000",
       },
-      fpsLimit: 900,
       responsive: [],
       fullScreen: {
         enable: true,
