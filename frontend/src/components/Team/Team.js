@@ -5,12 +5,16 @@ export default function Team() {
   const [members, setMembers] = useState([]);
 
   const fetchData = () => {
-    fetch("https://creators-commune.herokuapp.com/api/members/")
+    console.log(process.env.REACT_APP_FIREBASE_DOMAIN)
+    fetch(
+      `${process.env.REACT_APP_FIREBASE_DOMAIN}/Members.json`
+    )
       .then((response) => {
         return response.json();
       })
       .then((data) => {
         setMembers(data);
+        console.log(data);
       });
   };
   useEffect(() => {

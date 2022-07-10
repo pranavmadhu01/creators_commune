@@ -5,7 +5,7 @@ export default function News() {
   const [events, setEvents] = useState([]);
   const [image, setImage] = useState({ newsnowimg });
   async function fetchData() {
-    await fetch("https://creators-commune.herokuapp.com/api/events/")
+    await fetch(`${process.env.REACT_APP_FIREBASE_DOMAIN}/Events.json`)
       .then((response) => {
         return response.json();
       })
