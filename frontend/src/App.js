@@ -14,11 +14,11 @@ import Totop from "./components/totop/Totop";
 import Loading from "./Loading";
 
 function App() {
-  const [loading, setLoading] = useState(true)
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setTimeout(() => setLoading(false), 4000)
-  }, [])
+    setTimeout(() => setLoading(false), 4000);
+  }, []);
   const options = useMemo(() => {
     return {
       background: {
@@ -48,8 +48,8 @@ function App() {
         links: {
           enable: true,
           distance: 60,
-          color:{
-            value:"#00B7D9",
+          color: {
+            value: "#00B7D9",
           },
         },
         move: {
@@ -74,21 +74,20 @@ function App() {
   }, []);
   return (
     <>
-    {loading === false ?(
-      <div className="App">
-      <Navbar />
-      <Totop />
-      <Home />
-      <About />
-      <News />
-      <Team />
-      <Footer />
-      <Particles init={particlesInit} options={options} />    
-    </div>
-    ):(
-      <Loading />
-    )}
-    
+      {loading === false ? (
+        <div className="App">
+          <Navbar />
+          <Totop />
+          <Home />
+          <About />
+          <News />
+          <Team />
+          <Particles init={particlesInit} options={options} />
+          <Footer />
+        </div>
+      ) : (
+        <Loading />
+      )}
     </>
   );
 }
