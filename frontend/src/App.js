@@ -11,6 +11,7 @@ import News from "./components/News/News";
 import Team from "./components/Team/Team";
 import Footer from "./components/Footer/Footer";
 import Totop from "./components/totop/Totop";
+import Gallery from "./components/Gallery/Gallery";
 import Loading from "./Loading";
 
 function App() {
@@ -81,6 +82,7 @@ function App() {
           <Home />
           <About />
           <News />
+          <Gallery />
           <Team />
           <Particles init={particlesInit} options={options} />
           <Footer />
